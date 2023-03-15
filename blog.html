@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <a href="index.html">
+          <button
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Home
+        </button>
+        </a>
+      </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto  mt-10 text-center">
+      <h2 class="text-4xl text-green-500">Question & Answer</h2>
+    </section>
+    <!-- accordian / question & answer section start -->
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto  mt-20 text-start">
+      <!-- no 1 question -->
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box bg-green-500 text-white">
+        <div class="collapse-title text-xl font-medium">
+          Difference between Map,Filter,ForEach & Find 
+        </div>
+        <div class="collapse-content text-start"> 
+          <p>Map => Map always give a array.</p>
+          <p>Filter => Filter work like as a function and whitch condition match filter return the condition matching answer</p>
+          <p>forEach => forEach is a function but it is nothing to return</p>
+          <p>Find => find work as like a filter function but filter return all matching answer but find return first matching answer</p>
+        </div>
+      </div>
+      <!-- no 2 question -->
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box bg-green-500 text-white">
+        <div class="collapse-title text-xl font-medium">
+          Difference between local storage,session storage & cookies store
+        </div>
+        <div class="collapse-content text-start"> 
+          <p>Local storage => local storage save all data and if you reload the page or close the browser data didn't delete.</p>
+          <p>Session storage => Session storage work as a local storage but if you reload the page or close the browser delete all data</p>
+          <p>A cookie is information that a website puts on a user's computer. Cookies store a limited data in browser.</p>
+        </div>
+      </div>
+      <!-- no 3 question -->
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box bg-green-500 text-white">
+        <div class="collapse-title text-xl font-medium">
+          What is Event loop and how does it work ?
+        </div>
+        <div class="collapse-content text-start"> 
+          <p>
+            runtime model based on an event loop.
+          </p>
+        </div>
+      </div>
+      <!-- no 4 question -->
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box bg-green-500 text-white">
+        <div class="collapse-title text-xl font-medium">
+          How to work quiz timer in a function ?
+        </div>
+        <div class="collapse-content text-start"> 
+          <p>Quiz timer count the time and when submit the answer and close the time count.</p>
+        </div>
+      </div>
+            <!-- no 5 question -->
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box bg-green-500 text-white">
+        <div class="collapse-title text-xl font-medium">
+          How to work choose quiz function ?
+        </div>
+        <div class="collapse-content"> 
+          <p>Choose quiz is a function and two prameter here. when select the rignt answer choose quiz function store the answer in array and return/ push the answer in a answer function and call a displayAnswer() function to show the answer </p>
+        </div>
+      </div>
+    </section>
+
+    </section>
+    <!-- accordian / question & answer section end -->
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+
+    <!-- script file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
